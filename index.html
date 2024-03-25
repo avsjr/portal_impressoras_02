@@ -1,0 +1,951 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="IE=10">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="icon" href="http://s5a9vmphp01/portalimpressao/application/assets/images/printer.png">
+
+	<title>Portal de Mapeamento de Impressoras</title>
+
+	<link rel="stylesheet" href="http://s5a9vmphp01/portalimpressao/application/assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="http://s5a9vmphp01/portalimpressao/application/assets/css/style.css">
+	<link rel="stylesheet" href="http://s5a9vmphp01/portalimpressao/application/assets/css/font-awesome.min.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+
+	<script src="http://s5a9vmphp01/portalimpressao/application/assets/js/jquery.js"></script>
+	<script src="http://s5a9vmphp01/portalimpressao/application/assets/js/tether.min.js"></script>
+	<script src="http://s5a9vmphp01/portalimpressao/application/assets/js/popper.min.js"></script>
+	<script src="http://s5a9vmphp01/portalimpressao/application/assets/js/bootstrap.min.js"></script>
+
+	<script src="http://s5a9vmphp01/portalimpressao/application/assets/js/loading.js"></script>
+
+<!-- Include the CSS file to use the plugin default themes and loaders -->
+<link href="http://s5a9vmphp01/portalimpressao/application/assets/css/loading.css" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+
+	<header class="header p-1">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-3 cold-sm-3 col-xs-12">
+					<a href="http://s5a9vmphp01/portalimpressao/" id="site-title">
+					</a>
+				</div>
+
+				<div class="col-lg-9 col-md-9 cold-sm-9 col-xs-12 text-right">
+					<a class="btn btn-info" href="http://s5a9vmphp01/portalimpressao/">Pagina Inicial</a>
+					<!--<a class="btn btn-info" href="http://s5a9vmphp01/portalimpressao/">Pagina Inicial</a>-->
+				</div>
+			</div>
+		</div>
+	</header>
+
+<div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+	<h1 class="display-4">Adicione você mesmo!​</h1>
+	<p class="lead">Selecione uma impressora.​</p>
+</div>
+
+
+<div class="container">
+	<!-- container -->
+
+	<div class="">
+		<h2>Lista de Impressoras - Unidade
+			Três Lagoas		</h2>
+		<input class="btn-search" type="text" id="search" placeholder="Pesquise pelo nome, descrição ou cor da impressora que deseja mapear...">
+	</div>
+
+	<br>
+
+	<table class="table" id="fila">
+		<thead>
+			<tr>
+				<th scope="col">Impressora</th>
+				<th scope="col">Cor</th>
+				<th scope="col">Unidade</th>
+				<th scope="col">Descrição/Localização</th>
+				<th scope="col"></th>
+			</tr>
+		</thead>
+		<tbody>
+
+			
+			<tr>
+				<td>
+					TLA - PULLPRINT				</td>
+				<td>
+										<span class="btn-info badge">
+						<i class="fa fa-tint" aria-hidden="true"></i> Cor</span>
+									</td>
+				<td>
+					Três Lagoas				</td>
+				<td>
+					SYLVAMO PULL PRINT TLA				</td>
+				<td>
+
+					<span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Mapear Impressora">
+						<button class="btn btn-success badge" type="button" onclick="add('TLA - PULLPRINT', '\\\\S614VPS01.sylvamo.com\\TLA - PULLPRINT')">
+							<i class="fa fa-plus" aria-hidden="true"></i> Adicionar</button>
+					</span>
+
+					<span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Definir como Padrão">
+						<button class="btn btn-info badge" type="button" onclick="def('TLA - PULLPRINT', '\\\\S614VPS01.sylvamo.com\\TLA - PULLPRINT')">
+							<i class="fa fa-check" aria-hidden="true"></i> Def. Padrão</button>
+					</span>
+
+					<span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Desconectar Impressora">
+						<button class="btn btn-danger badge" type="button" onclick="del('TLA - PULLPRINT', '\\\\S614VPS01.sylvamo.com\\TLA - PULLPRINT')">
+							<i class="fa fa-times" aria-hidden="true"></i> Desconectar</button>
+					</span>
+				</td>
+			</tr>
+
+			
+			<tr>
+				<td>
+					P614001				</td>
+				<td>
+										<span class="btn-secondary badge">
+						<i class="fa fa-tint" aria-hidden="true"></i> PB</span>
+									</td>
+				<td>
+					Três Lagoas				</td>
+				<td>
+					 Logística				</td>
+				<td>
+
+					<span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Mapear Impressora">
+						<button class="btn btn-success badge" type="button" onclick="add('P614001', '\\\\S614VPS01\\P614001')">
+							<i class="fa fa-plus" aria-hidden="true"></i> Adicionar</button>
+					</span>
+
+					<span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Definir como Padrão">
+						<button class="btn btn-info badge" type="button" onclick="def('P614001', '\\\\S614VPS01\\P614001')">
+							<i class="fa fa-check" aria-hidden="true"></i> Def. Padrão</button>
+					</span>
+
+					<span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Desconectar Impressora">
+						<button class="btn btn-danger badge" type="button" onclick="del('P614001', '\\\\S614VPS01\\P614001')">
+							<i class="fa fa-times" aria-hidden="true"></i> Desconectar</button>
+					</span>
+				</td>
+			</tr>
+
+			
+			<tr>
+				<td>
+					P614002				</td>
+				<td>
+										<span class="btn-secondary badge">
+						<i class="fa fa-tint" aria-hidden="true"></i> PB</span>
+									</td>
+				<td>
+					Três Lagoas				</td>
+				<td>
+					 Tombamento de Bobina				</td>
+				<td>
+
+					<span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Mapear Impressora">
+						<button class="btn btn-success badge" type="button" onclick="add('P614002', '\\\\S614VPS01\\P614002')">
+							<i class="fa fa-plus" aria-hidden="true"></i> Adicionar</button>
+					</span>
+
+					<span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Definir como Padrão">
+						<button class="btn btn-info badge" type="button" onclick="def('P614002', '\\\\S614VPS01\\P614002')">
+							<i class="fa fa-check" aria-hidden="true"></i> Def. Padrão</button>
+					</span>
+
+					<span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Desconectar Impressora">
+						<button class="btn btn-danger badge" type="button" onclick="del('P614002', '\\\\S614VPS01\\P614002')">
+							<i class="fa fa-times" aria-hidden="true"></i> Desconectar</button>
+					</span>
+				</td>
+			</tr>
+
+			
+			<tr>
+				<td>
+					P614003				</td>
+				<td>
+										<span class="btn-secondary badge">
+						<i class="fa fa-tint" aria-hidden="true"></i> PB</span>
+									</td>
+				<td>
+					Três Lagoas				</td>
+				<td>
+					 ACB - Enfardamento LC 1				</td>
+				<td>
+
+					<span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Mapear Impressora">
+						<button class="btn btn-success badge" type="button" onclick="add('P614003', '\\\\S614VPS01\\P614003')">
+							<i class="fa fa-plus" aria-hidden="true"></i> Adicionar</button>
+					</span>
+
+					<span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Definir como Padrão">
+						<button class="btn btn-info badge" type="button" onclick="def('P614003', '\\\\S614VPS01\\P614003')">
+							<i class="fa fa-check" aria-hidden="true"></i> Def. Padrão</button>
+					</span>
+
+					<span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Desconectar Impressora">
+						<button class="btn btn-danger badge" type="button" onclick="del('P614003', '\\\\S614VPS01\\P614003')">
+							<i class="fa fa-times" aria-hidden="true"></i> Desconectar</button>
+					</span>
+				</td>
+			</tr>
+
+			
+			<tr>
+				<td>
+					P614004				</td>
+				<td>
+										<span class="btn-secondary badge">
+						<i class="fa fa-tint" aria-hidden="true"></i> PB</span>
+									</td>
+				<td>
+					Três Lagoas				</td>
+				<td>
+					 ACB - Enfardamento LC 2				</td>
+				<td>
+
+					<span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Mapear Impressora">
+						<button class="btn btn-success badge" type="button" onclick="add('P614004', '\\\\S614VPS01\\P614004')">
+							<i class="fa fa-plus" aria-hidden="true"></i> Adicionar</button>
+					</span>
+
+					<span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Definir como Padrão">
+						<button class="btn btn-info badge" type="button" onclick="def('P614004', '\\\\S614VPS01\\P614004')">
+							<i class="fa fa-check" aria-hidden="true"></i> Def. Padrão</button>
+					</span>
+
+					<span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Desconectar Impressora">
+						<button class="btn btn-danger badge" type="button" onclick="del('P614004', '\\\\S614VPS01\\P614004')">
+							<i class="fa fa-times" aria-hidden="true"></i> Desconectar</button>
+					</span>
+				</td>
+			</tr>
+
+			
+			<tr>
+				<td>
+					P614008				</td>
+				<td>
+										<span class="btn-secondary badge">
+						<i class="fa fa-tint" aria-hidden="true"></i> PB</span>
+									</td>
+				<td>
+					Três Lagoas				</td>
+				<td>
+					  Serviço Médico				</td>
+				<td>
+
+					<span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Mapear Impressora">
+						<button class="btn btn-success badge" type="button" onclick="add('P614008', '\\\\S614VPS01\\P614008')">
+							<i class="fa fa-plus" aria-hidden="true"></i> Adicionar</button>
+					</span>
+
+					<span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Definir como Padrão">
+						<button class="btn btn-info badge" type="button" onclick="def('P614008', '\\\\S614VPS01\\P614008')">
+							<i class="fa fa-check" aria-hidden="true"></i> Def. Padrão</button>
+					</span>
+
+					<span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Desconectar Impressora">
+						<button class="btn btn-danger badge" type="button" onclick="del('P614008', '\\\\S614VPS01\\P614008')">
+							<i class="fa fa-times" aria-hidden="true"></i> Desconectar</button>
+					</span>
+				</td>
+			</tr>
+
+			
+			<tr>
+				<td>
+					P614012				</td>
+				<td>
+										<span class="btn-secondary badge">
+						<i class="fa fa-tint" aria-hidden="true"></i> PB</span>
+									</td>
+				<td>
+					Três Lagoas				</td>
+				<td>
+					  Suprimentos				</td>
+				<td>
+
+					<span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Mapear Impressora">
+						<button class="btn btn-success badge" type="button" onclick="add('P614012', '\\\\S614VPS01\\P614012')">
+							<i class="fa fa-plus" aria-hidden="true"></i> Adicionar</button>
+					</span>
+
+					<span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Definir como Padrão">
+						<button class="btn btn-info badge" type="button" onclick="def('P614012', '\\\\S614VPS01\\P614012')">
+							<i class="fa fa-check" aria-hidden="true"></i> Def. Padrão</button>
+					</span>
+
+					<span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Desconectar Impressora">
+						<button class="btn btn-danger badge" type="button" onclick="del('P614012', '\\\\S614VPS01\\P614012')">
+							<i class="fa fa-times" aria-hidden="true"></i> Desconectar</button>
+					</span>
+				</td>
+			</tr>
+
+			
+			<tr>
+				<td>
+					P614017				</td>
+				<td>
+										<span class="btn-secondary badge">
+						<i class="fa fa-tint" aria-hidden="true"></i> PB</span>
+									</td>
+				<td>
+					Três Lagoas				</td>
+				<td>
+					  Lab. de Qualidade				</td>
+				<td>
+
+					<span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Mapear Impressora">
+						<button class="btn btn-success badge" type="button" onclick="add('P614017', '\\\\S614VPS01\\P614017')">
+							<i class="fa fa-plus" aria-hidden="true"></i> Adicionar</button>
+					</span>
+
+					<span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Definir como Padrão">
+						<button class="btn btn-info badge" type="button" onclick="def('P614017', '\\\\S614VPS01\\P614017')">
+							<i class="fa fa-check" aria-hidden="true"></i> Def. Padrão</button>
+					</span>
+
+					<span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Desconectar Impressora">
+						<button class="btn btn-danger badge" type="button" onclick="del('P614017', '\\\\S614VPS01\\P614017')">
+							<i class="fa fa-times" aria-hidden="true"></i> Desconectar</button>
+					</span>
+				</td>
+			</tr>
+
+			
+			<tr>
+				<td>
+					P614018				</td>
+				<td>
+										<span class="btn-secondary badge">
+						<i class="fa fa-tint" aria-hidden="true"></i> PB</span>
+									</td>
+				<td>
+					Três Lagoas				</td>
+				<td>
+					  Lab. de Qualidade				</td>
+				<td>
+
+					<span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Mapear Impressora">
+						<button class="btn btn-success badge" type="button" onclick="add('P614018', '\\\\S614VPS01\\P614018')">
+							<i class="fa fa-plus" aria-hidden="true"></i> Adicionar</button>
+					</span>
+
+					<span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Definir como Padrão">
+						<button class="btn btn-info badge" type="button" onclick="def('P614018', '\\\\S614VPS01\\P614018')">
+							<i class="fa fa-check" aria-hidden="true"></i> Def. Padrão</button>
+					</span>
+
+					<span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Desconectar Impressora">
+						<button class="btn btn-danger badge" type="button" onclick="del('P614018', '\\\\S614VPS01\\P614018')">
+							<i class="fa fa-times" aria-hidden="true"></i> Desconectar</button>
+					</span>
+				</td>
+			</tr>
+
+			
+			<tr>
+				<td>
+					P614019				</td>
+				<td>
+										<span class="btn-secondary badge">
+						<i class="fa fa-tint" aria-hidden="true"></i> PB</span>
+									</td>
+				<td>
+					Três Lagoas				</td>
+				<td>
+					  Balança				</td>
+				<td>
+
+					<span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Mapear Impressora">
+						<button class="btn btn-success badge" type="button" onclick="add('P614019', '\\\\S614VPS01\\P614019')">
+							<i class="fa fa-plus" aria-hidden="true"></i> Adicionar</button>
+					</span>
+
+					<span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Definir como Padrão">
+						<button class="btn btn-info badge" type="button" onclick="def('P614019', '\\\\S614VPS01\\P614019')">
+							<i class="fa fa-check" aria-hidden="true"></i> Def. Padrão</button>
+					</span>
+
+					<span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Desconectar Impressora">
+						<button class="btn btn-danger badge" type="button" onclick="del('P614019', '\\\\S614VPS01\\P614019')">
+							<i class="fa fa-times" aria-hidden="true"></i> Desconectar</button>
+					</span>
+				</td>
+			</tr>
+
+			
+			<tr>
+				<td>
+					P614020				</td>
+				<td>
+										<span class="btn-secondary badge">
+						<i class="fa fa-tint" aria-hidden="true"></i> PB</span>
+									</td>
+				<td>
+					Três Lagoas				</td>
+				<td>
+					 Logística A3				</td>
+				<td>
+
+					<span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Mapear Impressora">
+						<button class="btn btn-success badge" type="button" onclick="add('P614020', '\\\\S614VPS01\\P614020')">
+							<i class="fa fa-plus" aria-hidden="true"></i> Adicionar</button>
+					</span>
+
+					<span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Definir como Padrão">
+						<button class="btn btn-info badge" type="button" onclick="def('P614020', '\\\\S614VPS01\\P614020')">
+							<i class="fa fa-check" aria-hidden="true"></i> Def. Padrão</button>
+					</span>
+
+					<span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Desconectar Impressora">
+						<button class="btn btn-danger badge" type="button" onclick="del('P614020', '\\\\S614VPS01\\P614020')">
+							<i class="fa fa-times" aria-hidden="true"></i> Desconectar</button>
+					</span>
+				</td>
+			</tr>
+
+			
+			<tr>
+				<td>
+					P614021				</td>
+				<td>
+										<span class="btn-secondary badge">
+						<i class="fa fa-tint" aria-hidden="true"></i> PB</span>
+									</td>
+				<td>
+					Três Lagoas				</td>
+				<td>
+					   RH - GPS / Centro Social				</td>
+				<td>
+
+					<span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Mapear Impressora">
+						<button class="btn btn-success badge" type="button" onclick="add('P614021', '\\\\S614VPS01\\P614021')">
+							<i class="fa fa-plus" aria-hidden="true"></i> Adicionar</button>
+					</span>
+
+					<span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Definir como Padrão">
+						<button class="btn btn-info badge" type="button" onclick="def('P614021', '\\\\S614VPS01\\P614021')">
+							<i class="fa fa-check" aria-hidden="true"></i> Def. Padrão</button>
+					</span>
+
+					<span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Desconectar Impressora">
+						<button class="btn btn-danger badge" type="button" onclick="del('P614021', '\\\\S614VPS01\\P614021')">
+							<i class="fa fa-times" aria-hidden="true"></i> Desconectar</button>
+					</span>
+				</td>
+			</tr>
+
+			
+			<tr>
+				<td>
+					P614I				</td>
+				<td>
+										<span class="btn-secondary badge">
+						<i class="fa fa-tint" aria-hidden="true"></i> PB</span>
+									</td>
+				<td>
+					Três Lagoas				</td>
+				<td>
+					   Almoxarifado				</td>
+				<td>
+
+					<span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Mapear Impressora">
+						<button class="btn btn-success badge" type="button" onclick="add('P614I', '\\\\S614VPS01\\P614I')">
+							<i class="fa fa-plus" aria-hidden="true"></i> Adicionar</button>
+					</span>
+
+					<span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Definir como Padrão">
+						<button class="btn btn-info badge" type="button" onclick="def('P614I', '\\\\S614VPS01\\P614I')">
+							<i class="fa fa-check" aria-hidden="true"></i> Def. Padrão</button>
+					</span>
+
+					<span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Desconectar Impressora">
+						<button class="btn btn-danger badge" type="button" onclick="del('P614I', '\\\\S614VPS01\\P614I')">
+							<i class="fa fa-times" aria-hidden="true"></i> Desconectar</button>
+					</span>
+				</td>
+			</tr>
+
+			
+			<tr>
+				<td>
+					P614N_BKP				</td>
+				<td>
+										<span class="btn-info badge">
+						<i class="fa fa-tint" aria-hidden="true"></i> Cor</span>
+									</td>
+				<td>
+					Três Lagoas				</td>
+				<td>
+					 Provisória | ADM Máquina de Papel				</td>
+				<td>
+
+					<span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Mapear Impressora">
+						<button class="btn btn-success badge" type="button" onclick="add('P614N_BKP', '\\\\S614VPS01\\P614N_BKP')">
+							<i class="fa fa-plus" aria-hidden="true"></i> Adicionar</button>
+					</span>
+
+					<span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Definir como Padrão">
+						<button class="btn btn-info badge" type="button" onclick="def('P614N_BKP', '\\\\S614VPS01\\P614N_BKP')">
+							<i class="fa fa-check" aria-hidden="true"></i> Def. Padrão</button>
+					</span>
+
+					<span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Desconectar Impressora">
+						<button class="btn btn-danger badge" type="button" onclick="del('P614N_BKP', '\\\\S614VPS01\\P614N_BKP')">
+							<i class="fa fa-times" aria-hidden="true"></i> Desconectar</button>
+					</span>
+				</td>
+			</tr>
+
+			
+			<tr>
+				<td>
+					P614O				</td>
+				<td>
+										<span class="btn-secondary badge">
+						<i class="fa fa-tint" aria-hidden="true"></i> PB</span>
+									</td>
+				<td>
+					Três Lagoas				</td>
+				<td>
+					  Mecânica				</td>
+				<td>
+
+					<span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Mapear Impressora">
+						<button class="btn btn-success badge" type="button" onclick="add('P614O', '\\\\S614VPS01\\P614O')">
+							<i class="fa fa-plus" aria-hidden="true"></i> Adicionar</button>
+					</span>
+
+					<span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Definir como Padrão">
+						<button class="btn btn-info badge" type="button" onclick="def('P614O', '\\\\S614VPS01\\P614O')">
+							<i class="fa fa-check" aria-hidden="true"></i> Def. Padrão</button>
+					</span>
+
+					<span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Desconectar Impressora">
+						<button class="btn btn-danger badge" type="button" onclick="del('P614O', '\\\\S614VPS01\\P614O')">
+							<i class="fa fa-times" aria-hidden="true"></i> Desconectar</button>
+					</span>
+				</td>
+			</tr>
+
+			
+			<tr>
+				<td>
+					P614Q				</td>
+				<td>
+										<span class="btn-secondary badge">
+						<i class="fa fa-tint" aria-hidden="true"></i> PB</span>
+									</td>
+				<td>
+					Três Lagoas				</td>
+				<td>
+					 ACB Supervisão				</td>
+				<td>
+
+					<span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Mapear Impressora">
+						<button class="btn btn-success badge" type="button" onclick="add('P614Q', '\\\\S614VPS01\\P614Q')">
+							<i class="fa fa-plus" aria-hidden="true"></i> Adicionar</button>
+					</span>
+
+					<span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Definir como Padrão">
+						<button class="btn btn-info badge" type="button" onclick="def('P614Q', '\\\\S614VPS01\\P614Q')">
+							<i class="fa fa-check" aria-hidden="true"></i> Def. Padrão</button>
+					</span>
+
+					<span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Desconectar Impressora">
+						<button class="btn btn-danger badge" type="button" onclick="del('P614Q', '\\\\S614VPS01\\P614Q')">
+							<i class="fa fa-times" aria-hidden="true"></i> Desconectar</button>
+					</span>
+				</td>
+			</tr>
+
+			
+			<tr>
+				<td>
+					P614R				</td>
+				<td>
+										<span class="btn-secondary badge">
+						<i class="fa fa-tint" aria-hidden="true"></i> PB</span>
+									</td>
+				<td>
+					Três Lagoas				</td>
+				<td>
+					 MP - Sala de Controle				</td>
+				<td>
+
+					<span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Mapear Impressora">
+						<button class="btn btn-success badge" type="button" onclick="add('P614R', '\\\\S614VPS01\\P614R')">
+							<i class="fa fa-plus" aria-hidden="true"></i> Adicionar</button>
+					</span>
+
+					<span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Definir como Padrão">
+						<button class="btn btn-info badge" type="button" onclick="def('P614R', '\\\\S614VPS01\\P614R')">
+							<i class="fa fa-check" aria-hidden="true"></i> Def. Padrão</button>
+					</span>
+
+					<span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Desconectar Impressora">
+						<button class="btn btn-danger badge" type="button" onclick="del('P614R', '\\\\S614VPS01\\P614R')">
+							<i class="fa fa-times" aria-hidden="true"></i> Desconectar</button>
+					</span>
+				</td>
+			</tr>
+
+			
+
+
+		</tbody>
+	</table>
+
+	<br/><br/>
+
+</div>
+<!-- container -->
+
+<div id="ie" class="modal" tabindex="-1" role="dialog">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title">
+					<i class="fa fa-exclamation-circle" aria-hidden="true"></i> Navegador não Suportado</h5>
+			</div>
+			<div class="modal-body">
+				<p>Favor utilizar o navegador Internet Explorer para mapear as impressoras.</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div id="alerta" class="modal" tabindex="-1" role="dialog">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title">Atenção...</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<span id="alerta-txt"></span>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Ok</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div id="load" class="modal" tabindex="-1" role="dialog">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title">
+					<span id="a-load"></span>
+				</h5>
+			</div>
+			<div class="modal-body">
+				<div class="progress">
+					<div class="progress-bar bg-success progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="100" aria-valuemin="0"
+					aria-valuemax="100" style="width: 100%">Aguarde...</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="alert-bottom alert alert-success" style="display:none;" id="success-add">
+	<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+	<span id="s-action"></span>
+
+</div>
+
+<div class="alert-bottom alert alert-danger" style="display:none;" id="danger-alert">
+	<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+	<span id="d-action"></span>
+</div>
+
+<div class="alert-bottom alert alert-warning" style="display:none;" id="success-warning">
+	<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+	<span id="w-action"></span>
+</div>
+
+
+<script>
+	$(function () {
+		$('[data-toggle="tooltip"]').tooltip();
+
+	})
+
+	$("#search").keyup(function () {
+
+		var value = this.value;
+
+		value = value.toLowerCase();
+
+		$("table").find("tr").each(function (index) {
+			if (index === 0) return;
+			var id = $(this).find("td").text().toLowerCase();
+			$(this).toggle(id.indexOf(value) !== -1);
+		});
+	});
+
+	try {
+
+		var WshNetwork = new ActiveXObject("WScript.Network");
+
+		var regmod =  new ActiveXObject("WScript.Shell");
+
+	} catch (e) {
+
+		$('#ie').modal({
+			backdrop: 'static',
+			keyboard: false
+		});
+	}
+
+	function add(printer, path) {
+
+		$('#a-load').html("Adicionando Impressora...");
+
+		$('#load').modal({
+			backdrop: 'static',
+			keyboard: false
+		});
+
+		setTimeout(function () {
+			start_add(printer, path);
+		}, 1000);
+
+	}
+
+	function def(printer, path) {
+
+		$('#a-load').html("Definindo Impressora como Padrão...");
+
+		$('#load').modal({
+			backdrop: 'static',
+			keyboard: false
+		});
+
+		setTimeout(function () {
+			start_def(printer, path);
+		}, 2000);
+
+	}
+
+	function del(printer, path) {
+
+		$('#a-load').html("Removendo Impressora...");
+
+		$('#load').modal({
+			backdrop: 'static',
+			keyboard: false
+		});
+
+		setTimeout(function () {
+			start_del(printer, path);
+		}, 2000);
+
+	}
+
+
+	function start_add(printer, path) {
+
+		try {
+
+			var check = listPrinters(printer, path);
+
+			if (check == true) {
+
+				$('#load').modal('hide');
+
+				$('#alerta-txt').html("A impressora " + printer + " já está adicionada nesta máquina!");
+
+				$('#alerta').modal({
+					backdrop: 'static',
+					keyboard: false
+				});
+
+			} else {
+
+				WshNetwork.AddWindowsPrinterConnection(path);
+
+				$('#alerta-txt').html("A impressora " + printer + " foi adicionada com sucesso!");
+
+				setTimeout(checkIsDone(), 1000);
+
+			}
+
+		} catch (err) {
+
+			$('#load').modal('hide');
+
+			$('#alerta-txt').html("Ops, ocorreu um erro ao adicionar a impressora " + printer + "!");
+
+			$('#alerta').modal({
+				backdrop: 'static',
+				keyboard: false
+			});
+
+		}
+
+	}
+
+
+	function start_def(printer, path) {
+
+		try {
+
+			var check = listPrinters(printer, path);
+
+			if (check == true) {
+
+
+				var key = regmod.RegRead("HKEY_CURRENT_USER\\Software\\Microsoft\\Windows NT\\CurrentVersion\\Windows\\LegacyDefaultPrinterMode");
+	
+				if(key == 0){
+					console.log('OIEEEEEEEE');
+					regmod.RegWrite("HKEY_CURRENT_USER\\Software\\Microsoft\\Windows NT\\CurrentVersion\\Windows\\LegacyDefaultPrinterMode", 1, "REG_DWORD");
+				}
+
+				WshNetwork.SetDefaultPrinter(path);
+
+				$('#alerta-txt').html("A impressora " + printer + " foi definida como padrão!");
+
+				setTimeout(checkIsDone(), 1000);
+
+			} else {
+
+				$('#load').modal('hide');
+
+				$('#alerta-txt').html("Ops, esta impressora " + printer + " não está mapeada na máquina!");
+
+				$('#alerta').modal({
+					backdrop: 'static',
+					keyboard: false
+				});
+
+			}
+
+		} catch (err) {
+
+			$('#load').modal('hide');
+
+			$('#alerta-txt').html("Ops, ocorreu um erro ao definir a impressora como padrão!");
+
+			$('#alerta').modal({
+				backdrop: 'static',
+				keyboard: false
+			});
+		}
+
+	}
+
+
+	function start_del(printer, path) {
+
+		try {
+
+			var check = listPrinters(printer, path);
+
+			if (check == true) {
+
+				WshNetwork.RemovePrinterConnection(path);
+
+				$('#alerta-txt').html("A impressora " + printer + " foi desconectada com sucesso!");
+
+				setTimeout(checkIsDone(), 1000);
+
+			} else {
+
+				$('#load').modal('hide');
+
+				$('#alerta-txt').html("Ops, esta impressora " + printer + " não está mapeada na máquina!");
+
+				$('#alerta').modal({
+					backdrop: 'static',
+					keyboard: false
+				});
+
+			}
+
+		} catch (err) {
+
+			$('#load').modal('hide');
+
+			$('#alerta-txt').html("Ops, ocorreu um erro ao desconectada a impressora " + printer + "!");
+
+			$('#alerta').modal({
+				backdrop: 'static',
+				keyboard: false
+			});
+
+
+		}
+
+	}
+
+	function checkIsDone(printer, path) {
+
+		var check = listPrinters(printer, path);
+
+		if (check == true) {
+
+			$('#load').modal('hide');
+
+			$('#alerta').modal({
+				backdrop: 'static',
+				keyboard: false
+			});
+
+		} else {
+			setTimeout(checkIsDone(printer, path), 1000);
+		}
+	}
+
+
+	function listPrinters(printer, path) {
+
+		var oPrinters = WshNetwork.EnumPrinterConnections();
+		var oprinter;
+
+		for (i = 0; i < oPrinters.length; i += 2) {
+
+			oprinter = oPrinters.Item(i + 1).split("\\");
+
+			if (oprinter[3] == printer) //Validar com equalsIgnoreCase
+			{
+				console.log(oprinter[3]);
+				console.log("printer: " + printer);
+				return true;
+			}
+		}
+		return false;
+	}
+
+</script>
+
+
+<br><br><br>
+
+
+
+    </body>
+</html>
+          
