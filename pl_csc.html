@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Portal de Impressoras</title>
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="icon" href="static/img/skala.ico" type="image/x-icon">
+    <script src="static/script.js"></script>
+</head>
+<body>
+    <div class="header-container">
+        <a href="index.html">
+            <img class='logo_img' src="static/img/logo-skala.png" alt="Descrição">
+        </a>
+        <h1 class='logo_text'>Platina CSC</h1>
+    </div>
+    <div class="main-container">
+        <!-- Administrativo -->
+        <div class="csc_administrativo_impressora">
+            <h2>Impressora Administrativo</h2>
+            <button class="button-add" onclick="downloadScript('PL_CSC_ADM.bat')">Instalar Impressora</button>
+        </div>
+        <!-- Comercial -->
+        <div class="csc_administrativo_impressora">
+            <h2>Impressora Comercial</h2>
+            <button class="button-add" onclick="downloadScript('COMERCIAL.bat')">Instalar Impressora</button>
+        </div>
+        <!-- Marketing -->
+        <div class="csc_administrativo_impressora">
+            <h2>Impressora Marketing</h2>
+            <button class="button-add" onclick="downloadScript('MARKETING.bat')">Instalar Impressora</button>
+        </div>
+        <!-- Exportação -->
+        <div class="csc_administrativo_impressora">
+            <h2>Impressora Exportação</h2>
+            <button class="button-add" onclick="downloadScript('EXPORTACAO.bat')">Instalar Impressora</button>
+        </div>
+        <!-- Financeiro -->
+        <div class="csc_administrativo_impressora">
+            <h2>Impressora Financeiro - Cheque</h2>
+            <button class="button-add" onclick="downloadScript('FINANCEIRO_CHEQUE.bat')">Instalar Impressora</button>
+        </div>
+    </div>
+    <div class="footer-container">
+        <p>Copyright © 2022 Grupo Skala - Desenvolvido por SKALA.TECH</p>
+    </div> 
+</body>
+</html>
